@@ -107,7 +107,7 @@ elif choice == "Login":
             if username in stored_data and stored_data[username]["password"] == hash_password(password):
                 st.session_state.authenticated_user = username
                 st.session_state.failed_attempts = 0
-                st.success(f "Welcome {username}!")  
+                st.success(f"Welcome {username}!")  
             else:
                 st.session_state.failed_attempts += 1
                 remaining = 3 - st.session_state.failed_attempts
