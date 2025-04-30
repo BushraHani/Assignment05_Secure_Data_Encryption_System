@@ -48,7 +48,7 @@ def hash_password(password):
 # === cryptography.fernet used ===
 def encrypt_text(text, key):
     cipher = Fernet(generate_key(key))
-    return cipher. encrypt(text.encode()).decode()
+    return cipher.encrypt(text.encode()).decode()
 
 def decrypt_text(encrypt_text, key):
     try:
